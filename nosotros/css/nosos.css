@@ -1,0 +1,528 @@
+        * {
+            box-sizing: border-box;
+            margin: auto;
+            padding: 1px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .logo {
+            display: flex;
+            padding-top: 20px;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .caja5 {
+            display: none;
+        }
+
+        .nav-bar {
+            background: #FFAC42;
+            border: 1.5px solid black;
+            display: block;
+            color: white;
+            font-size: 2.0em;
+            cursor: pointer;
+            position: relative;
+            padding: 5px 10px;
+        }
+
+        .menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-size: 1.0em;
+            text-align: center;
+        }
+
+        .menu {
+            background: #FFAC42;
+            border: 1.5px solid black;
+            border-radius: 10px;
+            padding: 20px 15px;
+            width: 100%;
+            margin-left: 400%;
+            transition: all 0.3s;
+        }
+
+        .menu__items {
+            margin: 3px;
+            font-size: 30px;
+        }
+
+        .menu li a {
+            display: block;
+        }
+
+        .menu li:hover {
+            background: #543E44;
+            color: white;
+        }
+
+        .menu li a:hover {
+            color: white;
+        }
+
+        .menu li {
+            padding: 5px 10px;
+        }
+
+        .menu__link {
+            display: block;
+            padding: 2px;
+            color: black;
+            font-size: 1.2em;
+            text-decoration: none;
+        }
+
+        .mostrar {
+            margin-left: 0;
+        }
+
+        .nav-bar:hover {
+            color: black;
+        }
+
+        @media (min-width:1024px) {
+            .nav-bar {
+                display: none;
+            }
+            .menu {
+                margin-left: 0;
+                display: flex;
+            }
+            .menu li {
+                padding: 5px 10px;
+            }
+        }
+
+        @media screen and (max-width:1024px) {
+            .caja4 {
+                display: none;
+            }
+            .main-nav {
+                position: static;
+                z-index: 10000;
+            }
+            .menu {
+                bottom: 100px;
+            }
+            .menu li a {
+                display: block;
+            }
+        }
+
+        .redes-container {
+            display: flex;
+            height: 12vh;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .redes-container ul li {
+            display: inline-block;
+            margin: 1px;
+            width: 65px;
+            text-align: center;
+        }
+
+        .redes-container ul li a {
+            display: block;
+            background-color: rgb(20, 18, 18);
+            color: rgb(255, 255, 255);
+            line-height: 65px;
+            transition: .2s;
+            border-radius: 20px;
+        }
+
+        .redes-container ul li a:hover {
+            transform: translate(-3px) scale(1.05);
+            box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 4);
+            filter: none;
+        }
+
+        .enlaces li {
+            display: inline-block;
+            text-align: center;
+            padding: 10px;
+            font-size: 27px;
+        }
+
+        .enlaces li a {
+            color: black;
+        }
+
+        .menu__items {
+            border-radius: 20px;
+            border: 1.5px solid black;
+            text-align: left;
+            background-color: white;
+        }
+
+        .caja-encabezado {
+            padding: 10px;
+            background-color: #FFAC42;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+        }
+
+        .caja-encabezado h1 {
+            font-size: 1.5em;
+        }
+
+        .guacamayo {
+            display: block;
+            float: right;
+        }
+
+        .containerart {
+            display: flex;
+            flex-direction: row;
+            height: 250px;
+            background-color: #A7D8BB;
+            margin: 50px 50px;
+            border-radius: 10px;
+        }
+
+        .imgova {
+            width: 250px;
+            margin: 20px 20px;
+            padding-right: 20px;
+        }
+
+        .containerart h4 {
+            flex-direction: column;
+        }
+
+        .containerart a {
+            flex-direction: column;
+            float: left;
+        }
+
+        .containerart p {
+            flex-direction: column;
+            float: left;
+        }
+
+        .texto {
+            padding: 20px;
+            font-size: 1.4vw
+        }
+
+        .btnleer {
+            margin: 20px 20px;
+            padding: 10px 10px;
+            background-color: #007E00;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        .btnleer:hover {
+            background-color: white;
+            color: black;
+            transition: all 0.5s ease;
+        }
+
+        .btnart {
+            padding: 15px 15px;
+            font-size: 1em;
+            margin: 3px;
+            border-radius: 10px;
+            margin-top: 50px;
+            background-color: #A7D8BB;
+            color: black;
+            text-decoration: none;
+            border: 1.5px solid black;
+        }
+
+        .btnart:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .box-btnart {
+            margin-left: 20px;
+        }
+
+        .texto-art p {
+            padding: 10px 10px;
+            margin: 20px;
+        }
+
+        .texto-art h2 {
+            padding: 10px 10px;
+            margin: 20px;
+        }
+
+        .video {
+            background-image: url(../imagenes/Recurso\ 33A3.png);
+            background-repeat: no-repeat;
+            background-size: 2000px 830px;
+        }
+
+        .video-contenedor {
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .opacidad {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 6px;
+            padding: 10px;
+        }
+
+        .opa {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #009EFF;
+            font-size: 1.5vw;
+            border-radius: 10px;
+            padding: 10px 10px;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bolder;
+        }
+
+        .virtuall {
+            background-image: url(../imagenes/entorno.png);
+            background-repeat: no-repeat;
+            background-size: 1500px 450px;
+            height: 461px;
+        }
+
+        .entornor {
+            display: flex;
+            flex-direction: column;
+            text-align: start;
+            background-color: #D6D0D0;
+            border-radius: 30px;
+            position: relative;
+            bottom: 25%;
+            left: 38%;
+            width: 30%;
+            padding: 20px;
+            margin: 150px;
+            font-size: 1.4vw;
+            color: rgb(0, 0, 0);
+        }
+
+        .anarquiaa {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background-color: #D6D0D0;*/
+        }
+
+        .virtualll {
+            display: flex;
+            justify-content: end;
+            background-color: #ED6C7E;
+        }
+
+        .virtualll:hover {
+            background-color: white;
+            color: black;
+            transition: all 0, 9s ease;
+        }
+
+        .fot {
+            display: flex;
+            flex-direction: row-reverse;
+            position: relative;
+            left: 160px;
+        }
+
+        .fondo-m {
+            background-image: url(../imagenes/Fondo_04.png);
+        }
+
+        .logomerakiblanco {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* prueba*/
+
+        .ivan ul {
+            --c: #FF000D;
+            border: 1.5px solid black;
+            font-size: 2vw;
+            border-radius: 0.5em;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-family: sans-serif;
+            letter-spacing: 0.1em;
+            text-align: center;
+            line-height: 3em;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            transition: 0.2s;
+            margin: 1em;
+        }
+
+        .ivan ul span {
+            position: absolute;
+            width: 25%;
+            height: 100%;
+            background-color: var(--c);
+            transform: translateY(150%);
+            border-radius: 50%;
+            left: calc((var(--n) - 1) * 25%);
+            transition: 0.7s;
+            transition-delay: calc((var(--n) - 1) * 0.1s);
+            z-index: -1;
+        }
+
+        .ivan :hover {
+            color: whitesmoke;
+        }
+
+        .ivan :hover span {
+            transform: translateY(0) scale(2);
+        }
+
+        .ivan span:nth-child(1) {
+            --n: 1;
+        }
+
+        .ivan span:nth-child(2) {
+            --n: 2;
+        }
+
+        .ivan span:nth-child(3) {
+            --n: 3;
+        }
+
+        .ivan span:nth-child(4) {
+            --n: 4;
+        }
+
+        .ibi {
+            color: black;
+        }
+
+        /* final prueba*/
+
+        /* play*/
+
+        .wrap {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .button {
+            transition: all 0.2s ease-in-out 0s;
+        }
+
+        button::before {
+            transition: all .3s ease-in-out 0s;
+        }
+
+        .button:hover, .button:focus {
+            transform: translateY(-6px);
+        }
+
+        /* play-final*/
+
+        .sigue {
+            font-size: 34px;
+        }
+
+        /* Botones de entradas de estilos utilizados en páginas de descripción de películas.*/
+
+        .button-container {
+            display: inline-block;
+            position: relative;
+        }
+
+        .button-container a {
+            position: absolute;
+            bottom: 12px;
+            right: 30px;
+            background-color: #FF000D;
+            border-radius: 1.5em;
+            color: white;
+            text-transform: uppercase;
+            padding: 0.8em 1em;
+        }
+
+        .contactoo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #FF6700;
+            margin-bottom: 20px;
+            font-size: 1.5vw;
+            border-radius: 10px;
+            margin: 20px 20px;
+            padding: 10px 10px;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        .contactoo:hover {
+            background-color: white;
+            color: black;
+            transition: all 0.5s ease;
+        }
+
+        .colorn {
+            border-radius: 2px;
+            background-color: #FF9C5970;
+            margin-top: -10px;
+        }
+        .pajaro {
+            padding: 30px;
+        }
+    
+
+        @media only screen and (max-width:600px) {
+            .button-container {
+                display: inline-block;
+                margin-bottom: 2em;
+            }
+            .button-container a {
+                position: relative;
+                bottom: 0em;
+                right: -1em;
+                background-color: #FF000D;
+                color: white;
+                font-size: 1em;
+                padding: 1em 1.5em;
+                text-transform: uppercase;
+                border-color: white;
+                border-radius: 1.5em;
+            }
+        }
+
+        @media screen and (max-width: 1024px) {
+            .guacamayo {
+                display: none;
+            }
+            .imgova {
+                width: 100%;
+            }
+        }
+
+        @media (min-width:1024px) {
+            .guacamayo {
+                display: block;
+            }
+        }
